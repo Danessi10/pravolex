@@ -2529,6 +2529,10 @@ input::placeholder {
 }
 
 @media (max-width: 1023px) {
+    .pop-up {
+        height: 100vh;
+    }
+
     .success-pop-up {
         justify-content: center;
         max-width: unset;
