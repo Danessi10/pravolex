@@ -189,6 +189,7 @@ const callButton = document.querySelector(".header__call-button");
 const servicesButton = document.querySelector(".services__calculate-button");
 const givingButton = document.querySelector(".giving__button");
 const faqButton = document.querySelector(".faq__box-button");
+const faciaButton = document.querySelector(".facia__button");
 const burButton = document.querySelector(".burger-menu__call-button");
 
 const popUpFirst = document.querySelector("#first.pop-up");
@@ -227,6 +228,12 @@ burButton.onclick = () => {
 }
 
 callButton.onclick = () => {
+    popUpFirst.classList.add("open");
+    body.style.overflow = "hidden";
+    body.classList.add("closed");
+}
+
+faciaButton.onclick = () => {
     popUpFirst.classList.add("open");
     body.style.overflow = "hidden";
     body.classList.add("closed");
