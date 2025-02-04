@@ -2536,6 +2536,12 @@ input::placeholder {
         height: 100vh;
     }
 
+    .success-pop-up__cross-button {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+
     .success-pop-up__title {
         display: none;
     }
