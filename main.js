@@ -191,6 +191,7 @@ const givingButton = document.querySelector(".giving__button");
 const faqButton = document.querySelector(".faq__box-button");
 const faciaButton = document.querySelector(".facia__button");
 const burButton = document.querySelector(".burger-menu__call-button");
+const costButton = document.querySelector(".services__calculate-cost-button");
 
 const popUpFirst = document.querySelector("#first.pop-up");
 const popUpSecond = document.querySelector("#second.pop-up");
@@ -244,6 +245,20 @@ servicesButton.onclick = () => {
     body.style.overflow = "hidden";
     body.classList.add("closed");
 }
+
+costButton.onclick = () => {
+    popUpSecond.classList.add("open");
+    body.style.overflow = "hidden";
+    body.classList.add("closed");
+}
+
+document.addEventListener("click", (e) => {
+    if (!e.target.closest(".services__service-button")) return;
+
+    popUpSecond.classList.add("open");
+    body.style.overflow = "hidden";
+    body.classList.add("closed");
+})
 
 popUpCrossButton.addEventListener("click", handleFirstPopUp)
 secondPopUpCrossButton.addEventListener("click", handleSecondPopUp)
