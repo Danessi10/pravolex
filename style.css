@@ -2529,6 +2529,11 @@ input::placeholder {
 }
 
 @media (max-width: 1023px) {
+    .pop-up,
+    .success-pop-up {
+        border-radius: 0;
+    }
+    
     .pop-up {
         height: 100vh;
     }
